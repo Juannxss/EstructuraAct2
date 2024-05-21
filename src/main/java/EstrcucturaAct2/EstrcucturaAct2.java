@@ -4,6 +4,7 @@ import static EstrcucturaAct2.InsertionSort.insertionSort;
 import static EstrcucturaAct2.BubbleSort.bubbleSort;
 import static EstrcucturaAct2.QuickSort.quickSort;
 import static EstrcucturaAct2.RandomSort.randomSort;
+import static EstrcucturaAct2.SelectionSort.selectionSort;
 
 public class EstrcucturaAct2 {
 
@@ -38,7 +39,7 @@ public class EstrcucturaAct2 {
 
         quickSort(arr3, 0, arr3.length - 1);
 
-        for (int i = 0; i < arr3.length; i++) {
+        for (byte i = 0; i < arr3.length; i++) {
             System.out.print(arr3[i] + ", ");
         }
         System.out.println();
@@ -47,13 +48,28 @@ public class EstrcucturaAct2 {
         System.out.println("---RandomSort---");
         randomSort(arr3);
 
-        for (int i = 0; i < arr3.length; i++) {
+        for (byte i = 0; i < arr3.length; i++) {
             System.out.print(arr3[i] + ", ");
         }
 
         System.out.println();
         System.out.println();
 
+        
+        System.out.println("---SelectionSort---");
+        selectionSort(arr3);
+
+        for (byte i = 0; i < arr3.length; i++) {
+            System.out.print(arr3[i] + ", ");
+        }
+
+        System.out.println();
+        System.out.println();
+        
+        
+        
+        
+      
     }
 
 }
