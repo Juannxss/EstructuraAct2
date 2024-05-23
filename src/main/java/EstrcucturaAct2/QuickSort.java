@@ -12,28 +12,23 @@ public class QuickSort {
 
     public static int partition(int[] arr, int low, int hight) {
         int pivot = arr[hight];
-        int i = low -1;
+        int i = low - 1;
         for (int j = low; j < hight; j++) {
-            if (arr[j]<pivot){
+            if (arr[j] < pivot) {
                 i++;
-                
+
                 int temp = arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
-                
-                
-                
+                arr[i] = arr[j];
+                arr[j] = temp;
+
             }
         }
-        
-        int temp = arr[i+1];
-        arr[i+1]=arr[hight];
-        arr[hight]=temp;
-        return i+1;
+
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[hight];
+        arr[hight] = temp;
+        return i + 1;
 
     }
-   
 
 }
-
-

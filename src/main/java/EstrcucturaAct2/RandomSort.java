@@ -11,8 +11,5 @@ public class RandomSort {
             arr[random] = temp;
         }
     }
-    
+
 }
-
-
-

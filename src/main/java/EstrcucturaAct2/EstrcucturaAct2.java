@@ -55,7 +55,6 @@ public class EstrcucturaAct2 {
         System.out.println();
         System.out.println();
 
-        
         System.out.println("---SelectionSort---");
         selectionSort(arr3);
 
@@ -65,11 +64,7 @@ public class EstrcucturaAct2 {
 
         System.out.println();
         System.out.println();
-        
-        
-        
-        
-      
+
     }
 
 }
