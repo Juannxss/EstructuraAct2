@@ -1,6 +1,6 @@
 package EstrcucturaAct2;
 
-public class ListaSimple{
+public class ListaSimple<T>{
 
     private Nodo primero;//puntero que indica el inicio de la lista
     private int NumElement;//tamaño de la lista
@@ -91,6 +91,8 @@ public class ListaSimple{
     public Nodo getPrimero() {
         return primero;
     }
+
+    
 
    
 }

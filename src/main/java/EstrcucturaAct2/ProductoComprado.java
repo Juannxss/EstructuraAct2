@@ -10,7 +10,7 @@ public class ProductoComprado extends Producto {
     valor a pagar por concepto de IVA y el valor total a pagar
     
      */
-    private String  provedor, codigoProducto, fecha,
+    private String  provedor, codigoProducto, fecha, estadoVenta,
             cantidades;//kg litros
 
     private int precioComprado, valorPagarSinIVA, valorPagarConIVA, valorTotalPagar = valorPagarConIVA + valorPagarSinIVA, consecutivo;
@@ -21,7 +21,7 @@ public class ProductoComprado extends Producto {
 
     
 
-    public ProductoComprado(int consecutivo, String provedor, String codigoProducto, String fecha, String cantidades, int precioComprado, int valorPagarSinIVA, int valorPagarConIVA, String codigo, String nombre, String marca, String color, int medida, String categoria, int precioCompra, int precioVenta, int unidadesEnExistencia, float porcentajeDescuentoMax) {
+    public ProductoComprado(int consecutivo, String provedor, String codigoProducto, String estadoVneta, String fecha, String cantidades, int precioComprado, int valorPagarSinIVA, int valorPagarConIVA, String codigo, String nombre, String marca, String color, int medida, String categoria, int precioCompra, int precioVenta, int unidadesEnExistencia, float porcentajeDescuentoMax) {
         super(codigo, nombre, marca, color, medida, categoria, precioCompra, precioVenta, unidadesEnExistencia, porcentajeDescuentoMax);
         this.consecutivo = consecutivo;
         this.provedor = provedor;
@@ -31,10 +31,17 @@ public class ProductoComprado extends Producto {
         this.precioComprado = precioComprado;
         this.valorPagarSinIVA = valorPagarSinIVA;
         this.valorPagarConIVA = valorPagarConIVA;
+        this.estadoVenta = estadoVneta;
     }
 
 
+    public String getEstadoventa(){
+        return estadoVenta;
+    }
     
+    public void setEstadoVenta(String estadoVenta){
+        this.estadoVenta = estadoVenta;
+    }
 
     public int getValorPagarSinIVA() {
         return valorPagarSinIVA;
@@ -112,12 +119,7 @@ public class ProductoComprado extends Producto {
         return IVA;
     }
     
-    /* realizar calculo de la cantidad de dinero que debe pagar por esa compra
-    Para eso tiene en cuenta el impuesto del IVA que es
-    del 19% para todos los productos, anotando el valor a pagar sin IVA, el
-    valor a pagar por concepto de IVA y el valor total a pagar
     
-     */
    
     
 

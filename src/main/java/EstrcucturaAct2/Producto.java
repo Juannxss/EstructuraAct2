@@ -9,6 +9,7 @@ public class Producto {
     public Producto(){
         
     }
+    
 
     public Producto(String codigo, String nombre, String marca, String color, int medida, String categoria, int precioCompra, int precioVenta, int unidadesEnExistencia, float porcentajeDescuentoMax) {
         this.codigo = codigo;
