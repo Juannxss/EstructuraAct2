@@ -1,15 +1,10 @@
 package EstrcucturaAct2;
 
-import java.util.Date;
+
 
 public class ProductoComprado extends Producto {
 
-    /* realizar calculo de la cantidad de dinero que debe pagar por esa compra
-    Para eso tiene en cuenta el impuesto del IVA que es
-    del 19% para todos los productos, anotando el valor a pagar sin IVA, el
-    valor a pagar por concepto de IVA y el valor total a pagar
-    
-     */
+   
     private String  provedor, codigoProducto, fecha, estadoVenta,
             cantidades;//kg litros
 

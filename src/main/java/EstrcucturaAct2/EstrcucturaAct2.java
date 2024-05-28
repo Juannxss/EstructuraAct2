@@ -242,6 +242,7 @@ public class EstrcucturaAct2 {
             }
 
         }
+
         System.out.println();
         System.out.println("Las unidades existentes fueron actualizadas ");
         for (int i = 0; i < listt.tamaño(); i++) {
@@ -331,7 +332,6 @@ public class EstrcucturaAct2 {
             k = listt.traerElemento(i);
 
             total = k.getPrecioComprado() + total;//se suma el precio de compra de cada producto 
-
         }
         System.out.println("El total fue de dinero invertido en productos fue " + total + " $");//se imprime el dinero total invertido
 
