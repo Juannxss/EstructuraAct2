@@ -52,11 +52,11 @@ public class ProductoComprado extends Producto {
     }
 
     public float getValorPagarConIVA() {
-        return valorPagarConIVA;
+        return valorPagarConIVA+ (valorPagarConIVA*  IVA);
     }
 
     public void setValorPgarConIVA(int valorPgarConIVA) {
-        this.valorPagarConIVA = valorPgarConIVA * (int) IVA;
+        this.valorPagarConIVA = valorPgarConIVA;
     }
 
     public int getValorTotalPagar() {
